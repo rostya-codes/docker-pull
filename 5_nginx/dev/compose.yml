@@ -1,8 +1,8 @@
 services:
   web:
     image: nginx
-    container_name: server
+    container_name: server-compose
     ports:
-      - 127.0.0.1:8000:80
+      - 127.0.0.1:8081:80
     volumes:
       - ./site:/usr/share/nginx/html
